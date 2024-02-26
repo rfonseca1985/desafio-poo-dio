@@ -1,0 +1,28 @@
+public class ExemploBootcamp {
+    public static void main(String[] args) {
+        // Criando um Bootcamp
+        Bootcamp bootcampJava = new Bootcamp("Bootcamp Java");
+
+        // Criando Cursos
+        Curso cursoJava = new Curso("Java Fundamentals", "Aprenda os fundamentos do Java", 40);
+        Curso cursoSpring = new Curso("Spring Boot Basics", "Introdução ao Spring Boot", 30);
+
+        // Adicionando Cursos ao Bootcamp
+        bootcampJava.adicionarCurso(cursoJava);
+        bootcampJava.adicionarCurso(cursoSpring);
+
+        // Criando Mentoria
+        Mentoria mentoriaJava = new Mentoria("Java Avançado", "Terças às 15h");
+
+        // Adicionando Mentoria ao Bootcamp
+        bootcampJava.adicionarMentoria(mentoriaJava);
+
+        // Criando Devs
+        Devs dev1 = new Devs("Alice", "Júnior");
+        Devs dev2 = new Devs("Bob", "Pleno");
+
+        // Adicionando Devs ao Bootcamp
+        bootcampJava.adicionarParticipante(dev1);
+        bootcampJava.adicionarParticipante(dev2);
+    }
+}
